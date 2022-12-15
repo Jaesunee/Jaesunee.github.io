@@ -21,7 +21,7 @@ export const projects = [
     description:
       "A webpage meant for a Volleyball brand built from scratch using HTML and CSS",
     image: "./project-3.PNG",
-    link: "https://Jaesunee.github.io",
+    link: "https://htmlpreview.github.io/?https://github.com/Jaesunee/Example-Frontend/blob/main/index.html",
   },
   {
     title: "Personal Website",
@@ -29,7 +29,7 @@ export const projects = [
     description:
       "This website is a React JS application deployed to Github. Click to navigate to a tutorial where you can learn to build your own.",
     image: "./react.png",
-    link: "https://reactbootcamp.com",
+    link: "https://www.freecodecamp.org/news/build-portfolio-website-react/",
   },
 ];
 
