@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MailIcon } from '@heroicons/react/solid';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contact() {
     const [name, setName] = React.useState('');
@@ -8,12 +10,7 @@ export default function Contact() {
 
     function encode(data) {
         return Object.keys(data)
-            .map(
-                (key) =>
-                    encodeURIComponent(key) +
-                    '=' +
-                    encodeURIComponent(data[key])
-            )
+            .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
             .join('&');
     }
 
@@ -28,13 +25,14 @@ export default function Contact() {
             .catch((error) => alert(error));
     }
 
+    useEffect(() => {
+        AOS.init({ duration: 1500 });
+    }, []);
     return (
-        <section id="contact">
+        <section id="contact" data-aos-offset="600" data-aos="fade-up" data-aos-once="true">
             <div className="container px-5 py-10 mx-auto text-center items-center">
                 <MailIcon className="mx-auto inline-block w-10 mb-4" />
-                <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
-                    Contact Me
-                </h1>
+                <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">Contact Me</h1>
                 <br></br>
                 <div
                     style={{

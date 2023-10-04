@@ -1,54 +1,47 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
-import React from 'react';
+import React, { useRef } from 'react';
 
 export default function Navbar() {
-    const handleNavLinkClick = (sectionId) => {
-        const yOffset = -78;
-        const element = document.getElementById(sectionId);
-        const y =
-            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
+    // Create refs for the sections
+    const aboutRef = useRef(null);
+    const projectsRef = useRef(null);
+    const skillsRef = useRef(null);
+    const resumeRef = useRef(null);
+    const contactRef = useRef(null);
+
+    // Function to scroll to a section
+    const scrollToSection = (ref) => {
+        if (ref && ref.current) {
+            ref.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
     };
 
     return (
         <header className="bg-gray-800 md:sticky top-0 z-10">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a className="title-font font-medium text-white mb-4 md:mb-0">
-                    <a
-                        href="#about"
-                        className="ml-3 text-xl"
-                        onClick={() => handleNavLinkClick('about')}
-                    >
+                    <a href="#about" className="ml-3 text-xl" onClick={() => scrollToSection(aboutRef)}>
                         Jason Chung
                     </a>
                 </a>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-                    <a
-                        href="#projects"
-                        className="mr-5 hover:text-white"
-                        onClick={() => handleNavLinkClick('projects')}
-                    >
+                    <a href="#projects" className="mr-5 hover:text-white" onClick={() => scrollToSection(projectsRef)}>
                         Projects
                     </a>
-                    <a
-                        href="#skills"
-                        className="mr-5 hover:text-white"
-                        onClick={() => handleNavLinkClick('skills')}
-                    >
+                    <a href="#skills" className="mr-5 hover:text-white" onClick={() => scrollToSection(skillsRef)}>
                         Skills
                     </a>
-                    <a
-                        href="#resume"
-                        className="mr-5 hover:text-white"
-                        onClick={() => handleNavLinkClick('resume')}
-                    >
+                    <a href="#resume" className="mr-5 hover:text-white" onClick={() => scrollToSection(resumeRef)}>
                         Resume
                     </a>
                 </nav>
                 <a
                     href="#contact"
                     className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
-                    onClick={() => handleNavLinkClick('contact')}
+                    onClick={() => scrollToSection(contactRef)}
                 >
                     Contact Me
                     <ArrowRightIcon className="w-4 h-4 ml-1" />
