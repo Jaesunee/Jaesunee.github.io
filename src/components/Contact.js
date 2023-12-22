@@ -29,8 +29,8 @@ export default function Contact() {
         AOS.init({ duration: 1500 });
     }, []);
     return (
-        <section id="contact" data-aos-offset="600" data-aos="fade-up" data-aos-once="true">
-            <div className="container px-5 py-10 mx-auto text-center items-center">
+        <section id="contact" data-aos-offset="450" data-aos="fade-up" data-aos-once="true">
+            <div className="container px-5 py-5 mx-auto text-center items-center">
                 <MailIcon className="mx-auto inline-block w-10 mb-4" />
                 <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">Contact Me</h1>
                 <br></br>

@@ -1,5 +1,21 @@
 export const projects = [
     {
+        title: 'Rain in Australia',
+        subtitle: 'Python, PyTorch, TensorFlow, Jupyter Notebook',
+        description:
+            'Building neural networks using Python to predict next-day rainfall in Australia.',
+        image: './rain.jpg',
+        link: 'https://github.com/Jaesunee/Rain-In-Australia',
+    },
+    {
+        title: 'Legends to Slay',
+        subtitle: 'Java, Programming Design Patterns, UML Diagrams',
+        description:
+            'An interactive, multiplayer card game inspired by the card game _Here_ _to_ _Slay_ and the videogame _League_ _of_ _Legends_.',
+        image: './lts.PNG',
+        link: 'https://github.com/Jaesunee/Legends-To-Slay',
+    },
+    {
         title: 'RecipEat',
         subtitle: 'HTML, CSS, Javascript, EJS, PostreSQL, Node, Docker',
         description:
@@ -30,7 +46,7 @@ export const projects = [
             'This website is a React JS application deployed to Github. Click to navigate to a tutorial where you can learn to build your own.',
         image: './react.png',
         link: 'https://www.freecodecamp.org/news/build-portfolio-website-react/',
-    },
+    }
 ];
 
 export const testimonials = [
