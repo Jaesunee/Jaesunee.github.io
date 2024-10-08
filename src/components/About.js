@@ -30,17 +30,18 @@ export default function About() {
         <section id="about" data-aos-once="true">
             <div className="container mx-auto transform scale-90 flex px-20 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" data-aos="zoom-out">
-                        Hello! I'm Jason.
-                        <br className="hidden lg:inline-block" /> <br></br>
-                        <div data-aos="fade" data-aos-delay="1000">
-                            I am passionate about learning, solving problems, and building projects. <br></br>
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white text-title" data-aos="zoom-out">
+                        Welcome. My name is Jason.
+                        <br className="sm:block"></br>
+                        <div data-aos="fade leading-relaxed" data-aos-delay="1000">
+                            I am a developer who is passionate about learning, solving problems, and building projects. <br></br>
                         </div>
                     </h1>
-                    <p className="mb-8 leading-relaxed" data-aos="fade" data-aos-delay="2000">
-                        <br></br>I am a senior studying Computer Science at the University of Colorado Boulder College of Engineering. Lately I have been
-                        interested in opportunities related to software engineering, Data Science/ML/AI, and related fields. Please feel free to reach out or
-                        ask questions.
+                    <p className="mb-8 leading-relaxed text-base" data-aos="fade" data-aos-delay="2000">
+                        <br></br>Hello! I am a Masters student studying Software Engineering at Carnegie Mellon University School of Computer Science.
+                        Previously, I obtained my bachelor's degree in Computer Science at the University of Colorado Boulder, and worked as a software engineer
+                        at several organizations. Currently, I am seeking an internship role for next summer (2025) and full-time opportunities for the start of
+                        2026 related to software engineering. I am excited to get in touch!
                         <br></br>
                     </p>
                     <div className="flex justify-center" data-aos="fade" data-aos-delay="3000">
@@ -60,15 +61,11 @@ export default function About() {
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" data-aos="zoom-out">
                     <img className="object-cover object-center rounded" alt="hero" src="./coding.svg" />
-                </div>    
+                </div>
             </div>
             <div className="flex flex-col items-center justify-center px-10 py-5 md:flex-row">
-    {showArrow && (
-        <ArrowDownIcon className="text-grey animate-bounce h-10 w-10" />
-    )}
-</div>
-
+                {showArrow && <ArrowDownIcon className="text-grey animate-bounce h-10 w-10" />}
+            </div>
         </section>
-        
     );
 }

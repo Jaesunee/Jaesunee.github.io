@@ -1,52 +1,48 @@
 export const projects = [
     {
+        title: 'Healthcare Knowledge Graph',
+        subtitle: 'Python, AWS EC2, AWS Snowflake, Neo4j',
+        description:
+            'The goal of this capstone project was to model the healthcare supply chain using a graph database, allowing people to extract actionable insights through database queries and network analysis algorithms.',
+        image: './graph.png',
+        link: 'https://github.com/Jaesunee/GHX-GraphDB',
+    },
+    {
         title: 'Rain in Australia',
         subtitle: 'Python, PyTorch, TensorFlow, Jupyter Notebook',
-        description:
-            'Building neural networks using Python to predict next-day rainfall in Australia.',
+        description: 'Building neural networks using Python to predict next-day rainfall in Australia.',
         image: './rain.jpg',
         link: 'https://github.com/Jaesunee/Rain-In-Australia',
     },
     {
         title: 'Legends to Slay',
         subtitle: 'Java, Programming Design Patterns, UML Diagrams',
-        description:
-            'An interactive, multiplayer card game inspired by the card game _Here_ _to_ _Slay_ and the videogame _League_ _of_ _Legends_.',
-        image: './lts.PNG',
+        description: 'An interactive, multiplayer card game inspired by the card game "Here to Slay" and the videogame "League of Legends".',
+        image: './lts.png',
         link: 'https://github.com/Jaesunee/Legends-To-Slay',
     },
     {
         title: 'RecipEat',
         subtitle: 'HTML, CSS, Javascript, EJS, PostreSQL, Node, Docker',
         description:
-            "Group project for software development class that was designed to help users search for recipes based on what's in their pantry and dietary preferences.",
+            'Full-stack web application designed to help cooks search for recipes based on available ingredients and dietary preferences. Click to view the demo video. ',
         image: './project-1.PNG',
         link: 'https://drive.google.com/file/d/1_p3i7UntBl5MugVGJrMbilF0QAqj9Gyp/view',
     },
     {
         title: 'Virus Spread across Different Networks',
         subtitle: 'MATLAB and LaTeX',
-        description:
-            'This project is focused on analysing how a SARS virus spread over different types of networks. Simulations were run in MATLAB and the writeup was done in LaTeX.',
+        description: 'Simulating the spread of the SARS virus over graph networks. Includes MATLAB code and LaTeX project report.',
         image: './project-2.PNG',
         link: 'https://github.com/Jaesunee/Discrete-Math-Project',
     },
     {
-        title: 'Volleyball Store Page',
-        subtitle: 'HTML and CSS',
-        description:
-            'A webpage meant for a Volleyball brand built from scratch using HTML and CSS',
-        image: './project-3.PNG',
-        link: 'https://htmlpreview.github.io/?https://github.com/Jaesunee/Example-Frontend/blob/main/index.html',
-    },
-    {
         title: 'Personal Website',
         subtitle: 'React JS App',
-        description:
-            'This website is a React JS application deployed to Github. Click to navigate to a tutorial where you can learn to build your own.',
+        description: 'This website is a React JS application deployed to Github Pages. No need to click since you are already here ;).',
         image: './react.png',
-        link: 'https://www.freecodecamp.org/news/build-portfolio-website-react/',
-    }
+        link: 'https://jaesunee.github.io',
+    },
 ];
 
 export const testimonials = [
