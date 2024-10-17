@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ArrowDownIcon } from '@heroicons/react/solid';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
     const [showArrow, setShowArrow] = useState(true);
@@ -31,14 +32,50 @@ export default function About() {
             <div className="container mx-auto transform scale-90 flex px-20 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white text-title" data-aos="zoom-out">
-                        Welcome. My name is Jason.
+                        Hi, I am Jason Chung.
                         <br className="sm:block"></br>
                         <div data-aos="fade leading-relaxed" data-aos-delay="1000">
-                            I am a developer who is passionate about learning, solving problems, and building projects. <br></br>
+                            I am a software engineer.
+                            <div>
+                                <TypeAnimation
+                                    preRenderFirstString={true}
+                                    sequence={[
+                                        500,
+                                        'I enjoy designing scalable software', // initially rendered starting point
+                                        1000,
+                                        'I enjoy collaborating with teams',
+                                        1000,
+                                        'I enjoy conducting code reviews',
+                                        1000,
+                                        'I enjoy refactoring code',
+                                        1000,
+                                        'I enjoy solving complex problems',
+                                        1000,
+                                        'I enjoy learning new technologies',
+                                        1000,
+                                        'I enjoy optimizing system performance',
+                                        1000,
+                                        'I enjoy writing comprehensive documentation',
+                                        1000,
+                                        'I enjoy automating repetitive tasks',
+                                        1000,
+                                        'I enjoy ensuring software quality',
+                                        1000,
+                                        'I enjoy enhancing user experience',
+                                        1000,
+                                        'I enjoy adapting to new challenges',
+                                        500,
+                                    ]}
+                                    speed={50}
+                                    style={{ fontSize: '2em' }}
+                                    repeat={Infinity}
+                                />
+                            </div>
+                            <br></br>
                         </div>
                     </h1>
                     <p className="mb-8 leading-relaxed text-base" data-aos="fade" data-aos-delay="2000">
-                        <br></br>Hello! I am a Masters student studying Software Engineering at Carnegie Mellon University School of Computer Science.
+                        <br></br>Welcome! I am a Masters student studying Software Engineering at Carnegie Mellon University School of Computer Science.
                         Previously, I obtained my bachelor's degree in Computer Science at the University of Colorado Boulder, and worked as a software engineer
                         at several organizations. Currently, I am seeking an internship role for next summer (2025) and full-time opportunities for the start of
                         2026 related to software engineering. I am excited to get in touch!

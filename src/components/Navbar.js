@@ -1,5 +1,10 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
+import 'react-social-icons/github'
+import 'react-social-icons/linkedin'
 import React, { useRef } from 'react';
+import ReactDOM from 'react-dom'
+import {ReactSocialMediaIcons} from 'react-social-media-icons';
+
 
 export default function Navbar() {
     // Create refs for the sections
@@ -38,6 +43,8 @@ export default function Navbar() {
                         Resume
                     </a>
                 </nav>
+                <ReactSocialMediaIcons icon="github" url="https://github.com/Jaesunee" size="48" />
+                <ReactSocialMediaIcons icon="linkedin" url="https://linkedin.com/usjchung" size="48" />
                 <a
                     href="#contact"
                     className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-2 md:mt-0"

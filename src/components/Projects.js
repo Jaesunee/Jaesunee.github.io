@@ -4,6 +4,7 @@ import { projects } from '../data';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 export default function Projects() {
     useEffect(() => {
         AOS.init({ duration: 1500 });
@@ -15,8 +16,8 @@ export default function Projects() {
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white text-title">Projects</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        Hover over one of the images below to read more about the project I worked on.<br></br>
-                        Click if you want to see more related to the project.
+                        <b>Hover</b> to learn more about the projects I worked on.<br></br>
+                        <b>Click</b> to see the project code or a live demo.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4">

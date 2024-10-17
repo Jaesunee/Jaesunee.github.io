@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: 'Healthcare Knowledge Graph',
-        subtitle: 'Python, AWS EC2, AWS Snowflake, Neo4j',
+        subtitle: 'Python, AWS Elastic Compute Cloud (EC2), AWS Snowflake, Neo4j',
         description:
             'The goal of this capstone project was to model the healthcare supply chain using a graph database, allowing people to extract actionable insights through database queries and network analysis algorithms.',
         image: './graph.png',
@@ -16,14 +16,14 @@ export const projects = [
     },
     {
         title: 'Legends to Slay',
-        subtitle: 'Java, Programming Design Patterns, UML Diagrams',
+        subtitle: 'Java, Design Patterns, Unified Modeling Language (UML Diagramming)',
         description: 'An interactive, multiplayer card game inspired by the card game "Here to Slay" and the videogame "League of Legends".',
         image: './lts.png',
         link: 'https://github.com/Jaesunee/Legends-To-Slay',
     },
     {
         title: 'RecipEat',
-        subtitle: 'HTML, CSS, Javascript, EJS, PostreSQL, Node, Docker',
+        subtitle: 'HTML, CSS, Javascript, PostreSQL, Node.js, Docker, Heroku, API',
         description:
             'Full-stack web application designed to help cooks search for recipes based on available ingredients and dietary preferences. Click to view the demo video. ',
         image: './project-1.PNG',
@@ -31,14 +31,14 @@ export const projects = [
     },
     {
         title: 'Virus Spread across Different Networks',
-        subtitle: 'MATLAB and LaTeX',
+        subtitle: 'MATLAB, LaTeX',
         description: 'Simulating the spread of the SARS virus over graph networks. Includes MATLAB code and LaTeX project report.',
         image: './project-2.PNG',
         link: 'https://github.com/Jaesunee/Discrete-Math-Project',
     },
     {
         title: 'Personal Website',
-        subtitle: 'React JS App',
+        subtitle: 'React, Javascript, Tailwind CSS',
         description: 'This website is a React JS application deployed to Github Pages. No need to click since you are already here ;).',
         image: './react.png',
         link: 'https://jaesunee.github.io',
