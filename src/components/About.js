@@ -35,64 +35,65 @@ export default function About() {
                         Hi, I am Jason Chung.
                         <br className="sm:block"></br>
                         <div data-aos="fade leading-relaxed" data-aos-delay="1000">
-                            I am a software engineer.
+                            
                             <div>
                                 <TypeAnimation
                                     preRenderFirstString={true}
                                     sequence={[
-                                        500,
-                                        'I enjoy designing scalable software', // initially rendered starting point
+                                        1500,
+                                        'I enjoy software engineering.',
                                         1000,
-                                        'I enjoy collaborating with teams',
+                                        'I enjoy solving complex problems.',
                                         1000,
-                                        'I enjoy conducting code reviews',
+                                        'I enjoy collaborating with teams.',
                                         1000,
-                                        'I enjoy refactoring code',
+                                        'I enjoy learning new technologies.',
                                         1000,
-                                        'I enjoy solving complex problems',
+                                        'I enjoy optimizing system performance.',
                                         1000,
-                                        'I enjoy learning new technologies',
+                                        'I enjoy enhancing user experience.',
                                         1000,
-                                        'I enjoy optimizing system performance',
+                                        'I enjoy conducting code reviews.',
                                         1000,
-                                        'I enjoy writing comprehensive documentation',
+                                        'I enjoy refactoring code.',
                                         1000,
-                                        'I enjoy automating repetitive tasks',
+                                        'I enjoy designing scalable solutions.',
                                         1000,
-                                        'I enjoy ensuring software quality',
+                                        'I enjoy ensuring software quality.',
                                         1000,
-                                        'I enjoy enhancing user experience',
+                                        'I enjoy writing clear documentation.',
                                         1000,
-                                        'I enjoy adapting to new challenges',
-                                        500,
-                                    ]}
+                                        'I enjoy automating repetitive tasks.',
+                                        1000,
+                                        'I enjoy adapting to new challenges.',
+                                        500
+                                      ]}
                                     speed={50}
-                                    style={{ fontSize: '2em' }}
+                                    style={{ fontSize: '1em' }}
                                     repeat={Infinity}
                                 />
                             </div>
-                            <br></br>
                         </div>
                     </h1>
                     <p className="mb-8 leading-relaxed text-base" data-aos="fade" data-aos-delay="2000">
                         <br></br>Welcome! I am a Masters student studying Software Engineering at Carnegie Mellon University School of Computer Science.
                         Previously, I obtained my bachelor's degree in Computer Science at the University of Colorado Boulder, and worked as a software engineer
                         at several organizations. Currently, I am seeking an internship role for next summer (2025) and full-time opportunities for the start of
-                        2026 related to software engineering. I am excited to get in touch!
+                        2026 related to software engineering. Please reach me by email: jasonchu at cmu dot edu.
                         <br></br>
                     </p>
                     <div className="flex justify-center" data-aos="fade" data-aos-delay="3000">
                         <a
-                            href="#contact"
+                            href="mailto:jasonchu@andrew.cmu.edu"
                             className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
                         >
-                            Contact Me
+                            Email Me
                         </a>
                         <a
                             href="#projects"
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
                         >
-                            See My Projects
+                            View My Projects
                         </a>
                     </div>
                 </div>

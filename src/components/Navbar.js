@@ -1,9 +1,7 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
-import 'react-social-icons/github'
-import 'react-social-icons/linkedin'
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom'
-import {ReactSocialMediaIcons} from 'react-social-media-icons';
+import { ReactSocialMediaIcons } from 'react-social-media-icons';
 
 
 export default function Navbar() {
@@ -26,13 +24,15 @@ export default function Navbar() {
 
     return (
         <header className="bg-gray-800 md:sticky top-0 z-10">
-            <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
-                <a class="title-font font-medium text-white md:mb-0 flex items-center justify-center h-full">
-                    <a href="#about" class="ml-3 text-lg">
+            <div className="container mx-auto flex flex-wrap p-3 items-center justify-between">
+                <a className="title-font font-medium text-white flex items-center h-full">
+                    <a href="#about" className="ml-3 text-lg">
                         Jason Chung
                     </a>
                 </a>
-                <nav className="md:mr-auto md:ml-4 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
+                {/* Vertical line */}
+                <div className="border-l border-gray-600 h-6 mx-3" /> {/* Adjust height and margin as needed */}
+                <nav className="md:mr-auto flex flex-wrap items-center text-base">
                     <a href="#projects" className="mr-3 hover:text-white" onClick={() => scrollToSection(projectsRef)}>
                         Projects
                     </a>
@@ -43,16 +43,11 @@ export default function Navbar() {
                         Resume
                     </a>
                 </nav>
-                <ReactSocialMediaIcons icon="github" url="https://github.com/Jaesunee" size="48" />
-                <ReactSocialMediaIcons icon="linkedin" url="https://linkedin.com/usjchung" size="48" />
-                <a
-                    href="#contact"
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-2 md:mt-0"
-                    onClick={() => scrollToSection(contactRef)}
-                >
-                    Contact Me
-                    <ArrowRightIcon className="w-3 h-3 ml-1" />
-                </a>
+                <div className="flex items-center space-x-4">
+                    <ReactSocialMediaIcons icon="github" borderWidth='0' url="https://github.com/Jaesunee" size="32" />
+                    <ReactSocialMediaIcons icon="linkedin" borderWidth='0' url="https://www.linkedin.com/in/usjchung/" size="32" />
+                    <ReactSocialMediaIcons icon="mail" borderWidth='0' url="mailto:jasonchu@andrew.cmu.edu" size="32" />
+                </div>
             </div>
         </header>
     );
