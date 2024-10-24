@@ -8,9 +8,11 @@ import Testimonials from './components/Testimonials';
 import Resume from './components/Resume';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './index.css';
 
 export default function App() {
     return (
+        
         <main className="text-gray-400 bg-gray-900 body-font">
             <Navbar />
             <About />
@@ -19,5 +21,6 @@ export default function App() {
             <Resume />
             <Contact />
         </main>
+        
     );
 }

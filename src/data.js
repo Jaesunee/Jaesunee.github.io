@@ -62,17 +62,15 @@ export const testimonials = [
 
 export const skills = [
     'Data Structures and Algorithms',
-    'Programming (C/C++, Python, Java, JavaScript, SQL, Bash)',
+    'Programming (C/C++, Python, Java, JavaScript, Linux)',
     'Agile Development (Scrum, Kanban)',
     'Version Control and Code Review (Git, Stash, Bitbucket)',
     'Machine Learning/Artificial Intelligence',
-    'Deep Learning (PyTorch, TensorFlow, Keras)',
-    'Cloud Platforms (AWS, Azure)',
-    'DevOps (CI/CD, Docker, Infrastructure as Code)',
-    'Object-Oriented Design and Programming (UML, Design Patterns)',
-    'Testing and Quality Assurance (Unit testing, testing frameworks)',
+    'Web Development (HTML, CSS, React, TS, Node)',
+    'Cloud and DevOps (CI/CD, Docker, AWS, Azure)',
+    'Object-Oriented Design (UML, Design Patterns)',
+    'Testing and Quality Assurance (Unit Tests, Integrated Testing)',
     'Formal Methods (Model Checking, Theorem Proving)',
-    'Database Management (SQL, NoSQL)',
+    'Database Systems (SQL, NoSQL)',
     'Functional Programming (Scala, Haskell)',
-    'Web Development (HTML, CSS, JavaScript, React)',
 ];

@@ -1,8 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
 import React, { useRef } from 'react';
-import ReactDOM from 'react-dom'
 import { ReactSocialMediaIcons } from 'react-social-media-icons';
-
 
 export default function Navbar() {
     // Create refs for the sections
@@ -23,15 +21,15 @@ export default function Navbar() {
     };
 
     return (
-        <header className="bg-gray-800 md:sticky top-0 z-10">
-            <div className="container mx-auto flex flex-wrap p-3 items-center justify-between">
+        <header className="wrapper sticky top-0 bg-gray-800 z-10 shadow-lg">
+            <div className="container mx-auto flex flex-wrap p-3 items-center justify-between max-w-8xl">
                 <a className="title-font font-medium text-white flex items-center h-full">
                     <a href="#about" className="ml-3 text-lg">
                         Jason Chung
                     </a>
                 </a>
                 {/* Vertical line */}
-                <div className="border-l border-gray-600 h-6 mx-3" /> {/* Adjust height and margin as needed */}
+                <div className="border-l border-gray-600 h-6 mx-3" />
                 <nav className="md:mr-auto flex flex-wrap items-center text-base">
                     <a href="#projects" className="mr-3 hover:text-white" onClick={() => scrollToSection(projectsRef)}>
                         Projects
@@ -46,7 +44,7 @@ export default function Navbar() {
                 <div className="flex items-center space-x-4">
                     <ReactSocialMediaIcons icon="github" borderWidth='0' url="https://github.com/Jaesunee" size="32" />
                     <ReactSocialMediaIcons icon="linkedin" borderWidth='0' url="https://www.linkedin.com/in/usjchung/" size="32" />
-                    <ReactSocialMediaIcons icon="mail" borderWidth='0' url="mailto:jasonchu@andrew.cmu.edu" size="32" />
+                    <ReactSocialMediaIcons icon="mail" borderWidth='0' backgroundColor='#22C55E' url="mailto:jasonchu@andrew.cmu.edu" size="32" />
                 </div>
             </div>
         </header>
