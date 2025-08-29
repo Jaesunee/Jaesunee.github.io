@@ -60,9 +60,8 @@ export default function About() {
                     </h1>
                     <p className="mb-8 leading-relaxed text-base" data-aos="fade" data-aos-delay="2000">
                         <br></br>I'm pursuing a Master's in Software Engineering at Carnegie Mellon University, having earned my BS in Computer Science from the
-                        University of Colorado Boulder. I enjoy building applications at the intersection of computer science, ML/AI, and Big Data. This passion
-                        has led me to several internship opportunities with various organizations. Wherever I go, I strive to create a diverse, equitable, and
-                        inclusive team environment.
+                        University of Colorado Boulder. I'm interested in designing large-scale systems, site reliability engineering, and AI/ML applications. 
+                        Wherever I go, I strive to create a diverse, equitable, and inclusive team environment.
                         <br></br>
                         <br></br>I am currently seeking an internship role for next summer (2025) and full-time opportunities for the start of 2026 related to
                         software engineering.
