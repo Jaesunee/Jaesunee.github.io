@@ -60,11 +60,11 @@ export default function About() {
                     </h1>
                     <p className="mb-8 leading-relaxed text-base" data-aos="fade" data-aos-delay="2000">
                         <br></br>I'm pursuing a Master's in Software Engineering at Carnegie Mellon University, having earned my BS in Computer Science from the
-                        University of Colorado Boulder. I'm interested in designing large-scale systems, site reliability engineering, and AI/ML applications. 
+                        University of Colorado Boulder. I’m passionate about System Design, Site Reliability Engineering, and AI/ML applications. 
+                        These interests motivate me to pursue related opportunities in my education, work, and personal projects. 
                         Wherever I go, I strive to create a diverse, equitable, and inclusive team environment.
                         <br></br>
-                        <br></br>I am currently seeking an internship role for next summer (2025) and full-time opportunities for the start of 2026 related to
-                        software engineering.
+                        <br></br>I am currently seeking full-time opportunities for the start of 2026.
                         <br></br>
                     </p>
                     <div className="flex justify-center" data-aos="fade" data-aos-delay="3000">
