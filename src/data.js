@@ -1,5 +1,21 @@
 export const projects = [
     {
+        title: 'Intellitag',
+        subtitle: 'Python, NLP, Machine Learning, Flask, SQLite',
+        description:
+            'Explored how machine learning could help system administrators understand what kinds of software are running on a given server in a centralized, intelligent, and automated way. Designed and implemented the Intelligent Tagging System (ITS) using NLP and ML to classify services, automate tagging, and improve infrastructure metadata.',
+        image: './intellitag.png',
+        link: 'https://flightaware.engineering/intern-2025',
+    },
+    {
+        title: 'PetClinic',
+        subtitle: 'DevSecOps, Jenkins, SonarQube, OWASP ZAP, Prometheus, Grafana, Ansible',
+        description:
+            'Set up a DevSecOps pipeline for the Spring PetClinic application using containerized tools and automated deployment. Integrated CI/CD, static code analysis, security scanning, and real-time monitoring to demonstrate secure, automated software delivery.',
+        image: './devops.jpg',
+        link: 'https://github.com/Jaesunee/PetClinic',
+    },
+    {
         title: 'Healthcare Knowledge Graph',
         subtitle: 'Python, AWS Elastic Compute Cloud (EC2), AWS Snowflake, Neo4j',
         description:
