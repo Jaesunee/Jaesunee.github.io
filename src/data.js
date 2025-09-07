@@ -17,7 +17,7 @@ export const projects = [
     },
     {
         title: 'Healthcare Knowledge Graph',
-        subtitle: 'Python, AWS Elastic Compute Cloud (EC2), AWS Snowflake, Neo4j',
+        subtitle: 'Python, AWS, Neo4j, Jupyter Notebook',
         description:
             'The goal of this capstone project was to model the healthcare supply chain using a graph database, allowing people to extract actionable insights through database queries and network analysis algorithms.',
         image: './graph.png',
