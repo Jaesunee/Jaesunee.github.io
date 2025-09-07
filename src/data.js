@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: 'Intellitag',
-        subtitle: 'Python, NLP, Machine Learning, Flask, SQLite',
+        subtitle: 'Python, NLP/ML, Kubernetes, Flask, Netbox',
         description:
             'Designed and deployed an application that leveraged NLP and ML to classify services on servers and improve infrastructure management. Click to read the FlightAware blog post about it!',
         image: './intellitag.png',
@@ -9,7 +9,7 @@ export const projects = [
     },
     {
         title: 'PetClinic',
-        subtitle: 'DevSecOps, Jenkins, SonarQube, OWASP ZAP, Prometheus, Grafana, Ansible',
+        subtitle: 'Jenkins, SonarQube, Prometheus, Grafana, Ansible, Docker',
         description:
             'Set up a DevSecOps pipeline for a Java Spring application (used for managing a pet clinic). Integrated CI/CD, static code analysis, security scanning, and real-time monitoring to practice secure, automated software delivery.',
         image: './devops.jpg',
@@ -27,7 +27,7 @@ export const projects = [
         title: 'Rain in Australia',
         subtitle: 'Python, PyTorch, TensorFlow, Jupyter Notebook',
         description: 'Building neural networks using Python to predict next-day rainfall in Australia.',
-        image: './rain.jpg',
+        image: './rain.jpeg',
         link: 'https://github.com/Jaesunee/Rain-In-Australia',
     },
     {
