@@ -24,6 +24,13 @@ export const projects = [
         link: 'https://github.com/Jaesunee/GHX-GraphDB',
     },
     {
+        title: 'Virus Spread across Different Networks',
+        subtitle: 'MATLAB, LaTeX',
+        description: 'Simulating the spread of the SARS virus over graph networks. Includes MATLAB code and LaTeX project report.',
+        image: './project-2.PNG',
+        link: 'https://github.com/Jaesunee/Discrete-Math-Project',
+    },
+    {
         title: 'Rain in Australia',
         subtitle: 'Python, PyTorch, TensorFlow, Jupyter Notebook',
         description: 'Building neural networks using Python to predict next-day rainfall in Australia.',
@@ -44,13 +51,6 @@ export const projects = [
             'Full-stack web application designed to help cooks search for recipes based on available ingredients and dietary preferences. Click to view the demo video. ',
         image: './project-1.PNG',
         link: 'https://drive.google.com/file/d/1_p3i7UntBl5MugVGJrMbilF0QAqj9Gyp/view',
-    },
-    {
-        title: 'Virus Spread across Different Networks',
-        subtitle: 'MATLAB, LaTeX',
-        description: 'Simulating the spread of the SARS virus over graph networks. Includes MATLAB code and LaTeX project report.',
-        image: './project-2.PNG',
-        link: 'https://github.com/Jaesunee/Discrete-Math-Project',
     },
     {
         title: 'Personal Website',
