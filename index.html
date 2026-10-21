@@ -1,1 +1,37 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Jason's portfolio app created with React"/><link rel="apple-touch-icon" href="/favicon.ico"/><link rel="manifest" href="/manifest.json"/><title>Jason's Portfolio</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-1VEC55D4R9"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-1VEC55D4R9")</script><link href="/static/css/main.4b883baf.css" rel="stylesheet"></head><body><form name="test" netlify netlify-honeypot="bot-field" hidden><input name="name"/> <input type="email" name="email"/> <textarea name="message"></textarea></form><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.56d3806f.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#090c16" />
+        <meta name="description" content="Jason Chung — Full-Stack Developer with a passion for AI/ML and application development." />
+        <link rel="manifest" href="/manifest.json" />
+        <title>Jason Chung</title>
+        <script>
+            // Apply the saved light/dark theme before first paint to avoid a flash.
+            (function () {
+                if (localStorage.getItem('theme') === 'light') {
+                    document.documentElement.dataset.theme = 'light';
+                    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f6f8fc');
+                }
+            })();
+        </script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VEC55D4R9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-1VEC55D4R9');
+        </script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
+</html>
