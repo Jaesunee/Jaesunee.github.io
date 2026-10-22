@@ -3,7 +3,6 @@ import { motion } from 'motion/react';
 import { TypeAnimation } from 'react-type-animation';
 import { ArrowDown, Send } from 'lucide-react';
 import Magnetic from './Magnetic';
-import Logo from './Logo';
 import { profile } from '../data';
 
 const ease = [0.22, 1, 0.36, 1];
@@ -51,7 +50,7 @@ export default function Hero() {
                             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
                             <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
                         </span>
-                        {profile.location} · full-stack · AI/ML
+                        {profile.location} · Software Engineer · AI/ML
                     </motion.div>
 
                     <h1 className="font-mono text-4xl font-semibold tracking-tight text-fg sm:text-5xl lg:text-6xl">
@@ -66,7 +65,7 @@ export default function Hero() {
                         <TypeAnimation
                             preRenderFirstString
                             sequence={[
-                                'Full-Stack Developer',
+                                'Software Engineer',
                                 1800,
                                 'Backend Engineer',
                                 1200,
@@ -88,9 +87,9 @@ export default function Hero() {
                     </motion.div>
 
                     <motion.p {...fadeUp(0.9)} className="mt-8 max-w-xl text-base leading-relaxed">
-                        Hey! I'm a <span className="text-fg">Full-Stack Developer</span> with a passion for <span className="text-fg">AI/ML</span> and
+                        Hey! I'm a <span className="text-fg">Software Engineer</span> with a passion for <span className="text-fg">AI/ML</span> and
                         application development. I hold a Master's in Software Engineering from <span className="text-fg">Carnegie Mellon</span>{' '}
-                        <Emoji src="/emoji/black-dog.svg" label="black dog, for the CMU Scottie" />{' '}
+                        <Emoji src="/emoji/scotty.svg" label="CMU Scottie" />{' '}
                         and a BS in Computer Science from <span className="text-fg">CU Boulder</span>{' '}
                         <Emoji src="/emoji/bison.svg" label="buffalo, for the CU Buffaloes" />
                         . Outside of programming, I enjoy travelling and playing videogames.
@@ -134,24 +133,13 @@ export function Emoji({ src, label }) {
     return <img src={src} alt={label} title={label} className="inline-block h-[1.15em] w-[1.15em] -translate-y-[0.1em] align-middle" />;
 }
 
-/** Headshot in a glowing ring, with the JC logo badge sitting on top. */
+/** Headshot in a glowing ring. */
 function Portrait() {
     return (
         <div className="relative mx-auto flex aspect-square max-w-sm items-center justify-center">
             <div className="absolute inset-6 animate-[spin_14s_linear_infinite] rounded-full bg-[conic-gradient(from_0deg,rgb(var(--accent)),rgb(var(--accent2)),transparent_60%,rgb(var(--accent)))] opacity-60 blur-2xl" />
             <div className="surface relative h-3/4 w-3/4 overflow-hidden !rounded-full p-1.5">
-                <img src="/headshot.jpg" alt="Jason Chung" className="h-full w-full rounded-full object-cover" />
-            </div>
-            {/* Positioning lives on the wrapper so Motion's transform doesn't override the centering translate. */}
-            <div className="absolute left-1/2 top-[4%] -translate-x-1/2">
-                <motion.div
-                    className="surface !rounded-full px-4 py-2.5"
-                    initial={{ y: -12, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 0.6, ease }}
-                >
-                    <Logo size={30} />
-                </motion.div>
+                <img src="/headshot-gradient.png" alt="Jason Chung" className="h-full w-full rounded-full object-cover" />
             </div>
         </div>
     );

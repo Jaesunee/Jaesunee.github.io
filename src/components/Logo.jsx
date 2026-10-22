@@ -2,9 +2,9 @@ import React, { useId, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { LOGO_CELLS, LOGO_HEIGHT, LOGO_WIDTH } from '../lib/pixels';
 
-// Light-to-dark blue, top to bottom. Keep in sync with public/favicon.svg.
-export const LOGO_TOP = '#a5d8ff';
-export const LOGO_BOTTOM = '#1d4ed8';
+// Use the same theme colors as the hero name.
+export const LOGO_TOP = 'rgb(var(--accent))';
+export const LOGO_BOTTOM = 'rgb(var(--accent2))';
 export const LOGO_SHADOW = '#0b1a3f';
 
 const PARTICLES = Array.from({ length: 10 }, (_, i) => {
@@ -32,13 +32,14 @@ export default function Logo({ size = 28, className = '', animate = true }) {
             aria-label="JC"
         >
             <defs>
-                <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2={LOGO_HEIGHT} gradientUnits="userSpaceOnUse">
+                <linearGradient id={gradientId} x1="0" y1="0" x2={LOGO_WIDTH} y2={LOGO_HEIGHT} gradientUnits="userSpaceOnUse">
                     <stop offset="0" stopColor={LOGO_TOP} />
-                    <stop offset="1" stopColor={LOGO_BOTTOM} />
+                    <stop offset="0.6" stopColor={LOGO_BOTTOM} />
+                    <stop offset="1" stopColor={LOGO_TOP} />
                 </linearGradient>
             </defs>
             {/* Drop shadow, like the Minecraft title text */}
-            <g fill={LOGO_SHADOW}>
+            <g className="logo-shadow" fill={LOGO_SHADOW}>
                 {LOGO_CELLS.map(({ x, y }) => (
                     <rect key={`s${x}-${y}`} x={x + 1} y={y + 1} width={1} height={1} />
                 ))}

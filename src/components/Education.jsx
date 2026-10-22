@@ -1,3 +1,4 @@
+import { useTheme } from '../hooks/useTheme';
 import React from 'react';
 import { motion } from 'motion/react';
 import { GraduationCap } from 'lucide-react';
@@ -9,6 +10,7 @@ import { education } from '../data';
 const ease = [0.22, 1, 0.36, 1];
 
 export default function Education() {
+    const { theme } = useTheme();
     return (
         <section id="education" className="mx-auto max-w-6xl px-6 py-24">
             <SectionHeading index={4} path="education" title="Education" />
@@ -28,10 +30,10 @@ export default function Education() {
                                     href={ed.link}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="group flex h-28 items-center justify-center border-b border-line bg-[#f4f4f2]"
+                                    className="group flex h-28 items-center justify-center border-b border-line logo-panel"
                                     aria-label={`${ed.school} website`}
                                 >
-                                    <img src={ed.logo} alt={`${ed.school} logo`} className="max-h-10 w-auto max-w-[75%] object-contain transition-transform duration-500 group-hover:scale-105" />
+                                    <img src={theme === 'dark' && ed.logoDark ? ed.logoDark : ed.logo} alt={`${ed.school} logo`} className="max-h-10 w-auto max-w-[75%] object-contain transition-transform duration-500 group-hover:scale-105" />
                                 </a>
 
                                 <div className="flex flex-1 flex-col p-6">
@@ -55,7 +57,7 @@ export default function Education() {
                                         {ed.activities.map((a) => (
                                             <li key={a.title} className="flex flex-col gap-0.5 text-sm sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
                                                 <span className="text-fg">{a.title}</span>
-                                                <span className="shrink-0 font-mono text-xs">{a.when}</span>
+                                                {a.when && <span className="shrink-0 font-mono text-xs">{a.when}</span>}
                                             </li>
                                         ))}
                                     </ul>

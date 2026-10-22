@@ -1,6 +1,6 @@
 export const profile = {
     name: 'Jason Chung',
-    role: 'Full-Stack Developer',
+    role: 'Software Engineer',
     location: 'United States',
     email: 'jasonchung3003@gmail.com',
     github: 'https://github.com/Jaesunee',
@@ -11,7 +11,7 @@ export const skills = [
     { name: 'Python', logo: '/skills/python.svg', link: 'https://www.python.org' },
     { name: 'TypeScript', logo: '/skills/typescript.svg', link: 'https://www.typescriptlang.org' },
     { name: 'AWS', logo: '/skills/aws.svg', logoDark: '/skills/aws-dark.svg', link: 'https://aws.amazon.com' },
-    { name: 'React', logo: '/skills/react.svg', link: 'https://react.dev' },
+    { name: 'Foundry', logo: '/skills/palantir.svg', logoDark: '/skills/palantir-dark.svg', link: 'https://www.palantir.com/platforms/foundry/' },
     { name: 'Node.js', logo: '/skills/nodejs.svg', link: 'https://nodejs.org' },
     { name: 'Java', logo: '/skills/java.svg', link: 'https://dev.java' },
     { name: 'Atlassian', logo: '/skills/atlassian.svg', link: 'https://www.atlassian.com' },
@@ -25,7 +25,7 @@ export const experience = [
         role: 'Forward Deployed Engineer',
         location: 'Pittsburgh, PA',
         start: 'Jan 2026',
-        end: 'Present',
+        end: 'Oct 2026',
         link: 'https://www.teletracking.com',
         tags: ['Palantir Foundry', 'AWS', 'Full-stack', 'AI-assisted dev'],
         bullets: [
@@ -34,9 +34,8 @@ export const experience = [
             'Promoted AI-assisted development by sharing practical token cost reduction techniques and multi-agent workflows.',
         ],
         feature: {
-            image: '/experience/teletracking.png',
-            panel: 'dark',
-            label: 'Ambulatory IQ — a TeleTracking product I contributed to',
+            image: '/experience/teletracking-light.svg', imageDark: '/experience/teletracking-dark.svg',
+            label: 'Read about Ambulatory IQ',
             href: 'https://www.teletracking.com/healthcare-operations-iq-platform/ambulatory/',
         },
     },
@@ -54,8 +53,7 @@ export const experience = [
             'Used observability tools (Prometheus, Grafana) ensuring high availability, fast incident response, and reliable deployments.',
         ],
         feature: {
-            image: '/experience/flightaware.svg',
-            panel: 'light',
+            image: '/experience/flightaware.svg', imageDark: '/experience/flightaware-dark.svg',
             label: 'Read about my internship on the FlightAware engineering blog',
             href: 'https://flightaware.engineering/intern-2025/',
         },
@@ -73,7 +71,7 @@ export const experience = [
             'Populated graphs using internal and open source datasets, resulting in up to 50 times faster query response times.',
             'Measured performance of network algorithms and graph neural networks, achieving accuracy scores of up to 94%.',
         ],
-        feature: { image: '/experience/ghx.svg', panel: 'light', label: 'ghx.com', href: 'https://www.ghx.com' },
+        feature: { image: '/experience/ghx.svg', imageDark: '/experience/ghx-dark.svg', label: 'ghx.com', href: 'https://www.ghx.com' },
     },
     {
         company: 'Laboratory for Atmospheric and Space Physics',
@@ -87,7 +85,7 @@ export const experience = [
             'Deployed an internal web application with a REST API to reduce latency by 85% for hundreds of crucial databases.',
             'Automated tasks for databases ingesting telemetry data from satellites, enhancing usability for scientific researchers.',
         ],
-        feature: { image: '/experience/lasp.svg', panel: 'dark', label: 'lasp.colorado.edu', href: 'https://lasp.colorado.edu' },
+        feature: { image: '/experience/lasp-light.svg', imageDark: '/experience/lasp.svg', label: 'lasp.colorado.edu', href: 'https://lasp.colorado.edu' },
     },
 ];
 
@@ -158,21 +156,25 @@ export const projects = [
 export const education = [
     {
         school: 'Carnegie Mellon University',
-        emoji: { src: '/emoji/black-dog.svg', label: 'black dog, for the CMU Scottie' },
-        logo: '/education/cmu.svg',
+        emoji: { src: '/emoji/scotty.svg', label: 'CMU Scottie' },
+        logo: '/education/cmu.svg', logoDark: '/education/cmu-dark.svg',
         link: 'https://www.cmu.edu',
         degree: "Master's in Software Engineering — Scalable Systems",
         gpa: '3.9',
         location: 'Pittsburgh, PA',
         start: 'Aug 2024',
         end: 'Dec 2025',
-        activities: [{ title: 'Teaching Assistant — Quality Assurance', when: 'May 2025 – Dec 2025' }],
+        activities: [
+            { title: 'Teaching Assistant — Quality Assurance', when: 'May 2025 – Dec 2025' },
+            { title: 'TartanHacks' },
+            { title: 'Carnegie AI Safety Initiative (CASI)' },
+        ],
         coursework: ['Designing Software Systems', 'Computer Vision', 'Formal Methods', 'Design Patterns', 'Quality Assurance'],
     },
     {
         school: 'University of Colorado Boulder',
         emoji: { src: '/emoji/bison.svg', label: 'buffalo, for the CU Buffaloes' },
-        logo: '/education/cu-boulder.png',
+        logo: '/education/cu-boulder-light.svg', logoDark: '/education/cu-boulder-dark.svg',
         link: 'https://www.colorado.edu',
         degree: 'B.S. in Computer Science',
         gpa: '3.8',
@@ -182,6 +184,8 @@ export const education = [
         activities: [
             { title: 'Course Assistant — Software Development', when: 'Jan 2024 – May 2024' },
             { title: 'Center for Academic Success and Engagement (CASE) Ambassador', when: 'Jan 2024 – May 2024' },
+            { title: 'HackCU' },
+            { title: 'Quantum Computing Club' },
         ],
         coursework: ['Data Structures', 'Algorithms', 'Reinforcement Learning', 'Computer Systems', 'Operating Systems', 'Machine Learning'],
     },

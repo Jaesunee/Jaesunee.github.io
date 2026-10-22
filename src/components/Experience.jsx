@@ -1,3 +1,4 @@
+import { useTheme } from '../hooks/useTheme';
 import React, { useRef } from 'react';
 import { motion, useInView, useScroll, useSpring } from 'motion/react';
 import { ArrowUpRight, MapPin } from 'lucide-react';
@@ -116,7 +117,8 @@ function Role({ job }) {
 
 /** One picture per role: the company logo on a panel, linking to a related page. */
 function FeatureCard({ feature, company }) {
-    const dark = feature.panel === 'dark';
+    const { theme } = useTheme();
+    const dark = theme === 'dark';
     return (
         <motion.a
             href={feature.href}
@@ -128,14 +130,14 @@ function FeatureCard({ feature, company }) {
             viewport={{ once: true, margin: '0px 0px -15% 0px' }}
             transition={{ duration: 1.1, ease }}
         >
-            <div className={`relative flex aspect-[16/10] items-center justify-center overflow-hidden ${dark ? 'bg-[#0f1b2d]' : 'bg-[#f4f4f2]'}`}>
+            <div className={`relative flex aspect-[16/10] items-center justify-center overflow-hidden ${dark ? 'bg-[#0f1b2d]' : 'bg-white'}`}>
                 <div
                     className={`absolute inset-0 ${
                         dark ? 'bg-[radial-gradient(circle_at_30%_20%,rgb(255_255_255/0.08),transparent_60%)]' : 'bg-[radial-gradient(circle_at_30%_20%,#fff,transparent_70%)]'
                     }`}
                 />
                 <img
-                    src={feature.image}
+                    src={dark && feature.imageDark ? feature.imageDark : feature.image}
                     alt={`${company} logo`}
                     loading="lazy"
                     className="relative max-h-14 w-auto max-w-[70%] object-contain transition-transform duration-500 group-hover:scale-105"

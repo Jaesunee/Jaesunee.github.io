@@ -33,14 +33,14 @@ function ProjectGrid() {
                         transition={{ duration: 0.7, delay: (i % 3) * 0.08, ease }}
                     >
                         <SpotlightCard as="a" href={p.link} target="_blank" rel="noreferrer" className="group flex h-full flex-col overflow-hidden">
-                            <div className={`relative overflow-hidden border-b border-line ${featured ? 'aspect-[16/9] lg:aspect-[21/9]' : 'aspect-[16/9]'}`}>
+                            <div className={`project-image relative overflow-hidden border-b border-line ${featured ? 'aspect-[16/9] lg:aspect-[21/9]' : 'aspect-[16/9]'}`}>
                                 <img
                                     src={p.image}
                                     alt={p.title}
                                     loading="lazy"
                                     className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
+                                <div className="project-image-shade absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
                             </div>
                             <div className="relative z-[3] flex flex-1 flex-col gap-3 p-5">
                                 <h3 className={`flex items-start justify-between gap-3 font-semibold text-fg ${featured ? 'text-2xl' : 'text-lg'}`}>

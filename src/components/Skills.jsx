@@ -11,7 +11,7 @@ export default function Skills() {
 
     return (
         <section id="skills" className="mx-auto max-w-6xl px-6 py-24">
-            <SectionHeading index={1} path="skills" title="Skills" subtitle="The technologies I reach for most. Click one to visit its official site." />
+            <SectionHeading index={1} path="skills" title="Skills" subtitle="The technologies I reach for most." />
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
                 {skills.map((s, i) => (

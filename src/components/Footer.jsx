@@ -12,12 +12,6 @@ export default function Footer() {
                     <span>© {new Date().getFullYear()} {profile.name}</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-                    <span>
-                        built with <span className="text-fg">vite + react + motion</span>
-                    </span>
-                    <a href="https://github.com/Jaesunee/Jaesunee.github.io" target="_blank" rel="noreferrer" className="hover:text-fg">
-                        commit <span className="text-accent">{__COMMIT__}</span>
-                    </a>
                     <span className="flex items-center gap-3">
                         <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:text-fg">
                             <GithubIcon className="h-4 w-4" />

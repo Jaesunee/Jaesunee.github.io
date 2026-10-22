@@ -166,3 +166,12 @@
         transition-duration: 0.01ms !important;
     }
 }
+
+.logo-panel { background: #0f1b2d; }
+[data-theme="light"] .logo-panel { background: #fff; }
+img[src="/emoji/scotty.svg"] { filter: drop-shadow(0 0 1px #fff); }
+
+/* Keep light-mode photography clear of the card spotlight and white fade. */
+[data-theme="light"] .project-image { z-index: 3; }
+[data-theme="light"] .project-image-shade,
+[data-theme="light"] .logo-shadow { display: none; }
